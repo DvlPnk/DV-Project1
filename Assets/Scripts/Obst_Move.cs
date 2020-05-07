@@ -6,16 +6,18 @@ public class Obst_Move : MonoBehaviour
 {
     Rigidbody rbd;
     bool ret, trig, st;
-    public float time_1, time_max = 2.0f, vel = 10.0f;
+    public float time_1, time_max = 2.0f, vel = 10.0f, vel_add;
     private float posx, posz;
     private int i = 1, j = 1;
+    public P_Movement p_movement;
     void Start()
     {
         rbd = GetComponent<Rigidbody>();
     }
     void Update()
     {
-        rbd.velocity = new Vector3(-1, 0, 0)*vel;
+        vel_add = p_movement.points * 0.2f;
+        rbd.velocity = new Vector3(-1, 0, 0)* (vel + vel_add);
     }
     private void FixedUpdate()
     {

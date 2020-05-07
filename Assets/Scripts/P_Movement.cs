@@ -9,7 +9,7 @@ public class P_Movement : MonoBehaviour
     bool slowfast;
     private float time_1;
     private int i = 1, j = 1, r;
-    private int vida = 2, points = 0;
+    public int vida = 2, points = 0;
     void Start()
     {
         rbd=GetComponent<Rigidbody>();
@@ -21,7 +21,12 @@ public class P_Movement : MonoBehaviour
     {
         movx = Input.GetAxis("Horizontal");
         movz = Input.GetAxis("Vertical");
-        rbd.velocity = new Vector3(movx, 0, movz) * vel;
+        rbd.velocity = new Vector3(movx, 0, movz) * (vel+points*0.1f);
+        if (vida == 0)
+        {
+            print("You lose");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
     }
     private void OnCollisionEnter(Collision col)
     {

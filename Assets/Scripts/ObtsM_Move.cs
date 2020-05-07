@@ -10,6 +10,7 @@ public class ObtsM_Move : MonoBehaviour
     private bool gen, ret;
     private int i = 1, j = 1;
     private float posz, time_1, time_max;
+    public P_Movement p_movement;
     // Start is called before the first frame update
     void Start()
     {

@@ -124,3 +124,6 @@ MonoBehaviour:
   time_1: 0
   time_max: 2
   vel: 10
+  vel_add: 0
+  p_movement: {fileID: 7719112723986446208, guid: bd2b945307af4ea4db4536165034a9c5,
+    type: 3}
