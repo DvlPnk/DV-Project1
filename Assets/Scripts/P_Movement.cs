@@ -21,7 +21,7 @@ public class P_Movement : MonoBehaviour
     {
         movx = Input.GetAxis("Horizontal");
         movz = Input.GetAxis("Vertical");
-        rbd.velocity = new Vector3(movx, 0, movz) * (vel+points*0.1f);
+        rbd.velocity = new Vector3(movx, 0, movz) *vel;
         if (vida == 0)
         {
             print("You lose");

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ObtsM_Move : MonoBehaviour
 {
-    Rigidbody rbd;
     public GameObject ObtsG;
     private float time1, genT = 1.0f;
     private bool gen, ret;
     private int i = 1, j = 1;
     private float posz, time_1, time_max;
-    public P_Movement p_movement;
     // Start is called before the first frame update
     void Start()
     {

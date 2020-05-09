@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObtsG_Move : MonoBehaviour
 {
-    Rigidbody rbd;
     public GameObject ObtsG;
     private float time1, genT=1.0f;
     private bool gen, ret;
