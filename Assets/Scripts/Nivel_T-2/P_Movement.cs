@@ -7,11 +7,12 @@ public class P_Movement : MonoBehaviour
     private float vel=10.0f;
     private float movx, movz;
     public bool slowfast;
-    private float time_1;
+    private float time_1, time_2;
     private int i = 1, j = 1;
     public int r=0;
     public int vida = 2, points = 0;
     public int temp = 0;
+    public Pause_M pause;
     void Start()
     {
         rbd =GetComponent<Rigidbody>();
@@ -36,18 +37,29 @@ public class P_Movement : MonoBehaviour
                 {
                     temp = r;
                     Time.timeScale = 0.5f;
+                    time_2 = 0.5f;
                 }
                 else
                 {
                     temp = r;
                     Time.timeScale = 1.5f;
+                    time_2 = 1.5f;
                 }
             }
             else
             {
                 temp = 0;
                 Time.timeScale = 1.0f;
+                time_2 = 1.0f;
                 i++;
+            }
+            if (pause.pause == true)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = time_2;
             }
         }
     }

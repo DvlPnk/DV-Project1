@@ -952,6 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause: {fileID: 886421489}
+  pause: 0
 --- !u!1 &570067750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,6 +3703,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114783656765258254, guid: 3fd4f2bb499e7a84897afebf080c1eaa,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 534669906}
     - target: {fileID: 4064347859356174193, guid: 3fd4f2bb499e7a84897afebf080c1eaa,
         type: 3}
       propertyPath: m_Name

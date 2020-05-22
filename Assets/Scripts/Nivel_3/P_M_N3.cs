@@ -9,10 +9,11 @@ public class P_M_N3 : MonoBehaviour
     private float vel = 15.0f;
     private float movx, movz;
     bool slowfast;
-    private float time_1;
+    private float time_1, time_2;
     private int i = 1, j = 1, r, k = 1;
     public int vida = 2, points = 0;
     public float temp=0;
+    public Pause_M pause;
     void Start()
     {
         Time.timeScale = 1;
@@ -38,18 +39,29 @@ public class P_M_N3 : MonoBehaviour
                 {
                     temp = r;
                     Time.timeScale = 0.5f;
+                    time_2 = 0.5f;
                 }
                 else
                 {
                     temp = r;
                     Time.timeScale = 1.5f;
+                    time_2 = 1.5f;
                 }
             }
             else
             {
                 temp = 0;
                 Time.timeScale = 1.0f;
+                time_2 = 1.0f;
                 i++;
+            }
+            if (pause.pause == true)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = time_2;
             }
         }
     }

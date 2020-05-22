@@ -2932,6 +2932,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7719112723986446208, guid: bd2b945307af4ea4db4536165034a9c5,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 1817324824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2b945307af4ea4db4536165034a9c5, type: 3}
 --- !u!114 &1715643672 stripped
@@ -3133,6 +3138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause: {fileID: 568246702}
+  pause: 0
 --- !u!1 &1821620247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,7 +3171,6 @@ MonoBehaviour:
   Fast: {fileID: 1660876659}
   Slow: {fileID: 843944694}
   Crash: {fileID: 1296687261}
-  game_Ov: {fileID: 1434167684}
   player: {fileID: 1715643672}
 --- !u!4 &1821620249
 Transform:

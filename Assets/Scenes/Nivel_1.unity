@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause: {fileID: 2049406550}
+  pause: 0
 --- !u!1 &406628414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1411,11 @@ PrefabInstance:
       propertyPath: audio1
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7719112723986446208, guid: bd2b945307af4ea4db4536165034a9c5,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 387868932}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2b945307af4ea4db4536165034a9c5, type: 3}
 --- !u!1 &929157156
@@ -1795,7 +1801,6 @@ MonoBehaviour:
   Fast: {fileID: 406628414}
   Slow: {fileID: 1776632482}
   Crash: {fileID: 1746021838}
-  game_Ov: {fileID: 1201335223}
   player: {fileID: 1868877207}
 --- !u!4 &1230454609
 Transform:
