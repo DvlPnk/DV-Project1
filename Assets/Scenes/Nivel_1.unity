@@ -1050,6 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1868877207}
   fail: {fileID: 1958955472}
+  dead: 0
 --- !u!1 &782182266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1417,11 @@ PrefabInstance:
       propertyPath: pause
       value: 
       objectReference: {fileID: 387868932}
+    - target: {fileID: 7719112723986446208, guid: bd2b945307af4ea4db4536165034a9c5,
+        type: 3}
+      propertyPath: game
+      value: 
+      objectReference: {fileID: 733014632}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2b945307af4ea4db4536165034a9c5, type: 3}
 --- !u!1 &929157156

@@ -1221,6 +1221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 416699608}
   fail: {fileID: 697121115}
+  dead: 0
 --- !u!4 &637781183
 Transform:
   m_ObjectHideFlags: 0
@@ -3708,6 +3709,11 @@ PrefabInstance:
       propertyPath: pause
       value: 
       objectReference: {fileID: 534669906}
+    - target: {fileID: 114783656765258254, guid: 3fd4f2bb499e7a84897afebf080c1eaa,
+        type: 3}
+      propertyPath: game
+      value: 
+      objectReference: {fileID: 637781182}
     - target: {fileID: 4064347859356174193, guid: 3fd4f2bb499e7a84897afebf080c1eaa,
         type: 3}
       propertyPath: m_Name

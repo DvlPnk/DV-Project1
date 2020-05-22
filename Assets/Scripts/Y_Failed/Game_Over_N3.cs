@@ -7,6 +7,7 @@ public class Game_Over_N3 : MonoBehaviour
 {
     public P_M_N3 player;
     public GameObject fail;
+    public bool dead = false;
     void Start()
     {
 
@@ -17,8 +18,13 @@ public class Game_Over_N3 : MonoBehaviour
     {
         if (player.vida == 0)
         {
+            dead = true;
             Time.timeScale = 0;
             fail.SetActive(true);
+        }
+        else
+        {
+            dead = false;
         }
     }
     public void PlayAgain()

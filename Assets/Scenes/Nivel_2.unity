@@ -2782,6 +2782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1715643672}
   fail: {fileID: 784027830}
+  dead: 0
 --- !u!4 &1686307133
 Transform:
   m_ObjectHideFlags: 0
@@ -2937,6 +2938,11 @@ PrefabInstance:
       propertyPath: pause
       value: 
       objectReference: {fileID: 1817324824}
+    - target: {fileID: 7719112723986446208, guid: bd2b945307af4ea4db4536165034a9c5,
+        type: 3}
+      propertyPath: game
+      value: 
+      objectReference: {fileID: 1686307132}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2b945307af4ea4db4536165034a9c5, type: 3}
 --- !u!114 &1715643672 stripped

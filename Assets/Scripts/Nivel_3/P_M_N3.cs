@@ -14,6 +14,7 @@ public class P_M_N3 : MonoBehaviour
     public int vida = 2, points = 0;
     public float temp=0;
     public Pause_M pause;
+    public Game_Over_N3 game;
     void Start()
     {
         Time.timeScale = 1;
@@ -55,7 +56,7 @@ public class P_M_N3 : MonoBehaviour
                 time_2 = 1.0f;
                 i++;
             }
-            if (pause.pause == true)
+            if (pause.pause == true || game.dead == true)
             {
                 Time.timeScale = 0;
             }

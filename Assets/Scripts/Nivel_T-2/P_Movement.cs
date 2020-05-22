@@ -13,6 +13,7 @@ public class P_Movement : MonoBehaviour
     public int vida = 2, points = 0;
     public int temp = 0;
     public Pause_M pause;
+    public Game_Over game;
     void Start()
     {
         rbd =GetComponent<Rigidbody>();
@@ -53,7 +54,7 @@ public class P_Movement : MonoBehaviour
                 time_2 = 1.0f;
                 i++;
             }
-            if (pause.pause == true)
+            if (pause.pause == true || game.dead == true)
             {
                 Time.timeScale = 0;
             }
